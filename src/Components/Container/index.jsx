@@ -15,6 +15,9 @@ background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 800px) {
+     flex-direction: column;
+  }
   `
 
 const Container = () => {
