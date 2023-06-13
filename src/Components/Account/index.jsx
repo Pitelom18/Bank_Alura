@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Icono, Box, Saldo, Btn, Detalle } from "../UI";
+import { Icono, Box, Btn, Saldo, Detalle, IconoTema } from "../UI";
 import privado from "../../assets/images/privado.svg";
 import ojo from "../../assets/images/ojo.svg";
 import dinero from "../../assets/images/dinero.svg";
 
-//herencia de estilos
-//quiero que lleve los estilos de Icono pero aplicar otros estilos solo a un componente
+
 const IconoMargin = styled(Icono)`
-  margin-top: 2px;`
+  margin-top: 2px;
+`
+
 
 const Account = () => {
   const [toggleState, untoggle] = useState(true);
@@ -23,7 +24,7 @@ const Account = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponible
         <span>
-          <Icono src={dinero} alt="Icono de saldo" />
+          <IconoTema src={dinero} alt="Icono de saldo" />
         </span>
         {toggleState ? (
           <Saldo>
@@ -33,7 +34,7 @@ const Account = () => {
       </div>
 
       <Btn onClick={toggleHandler}>
-        <IconoMargin                  
+        <IconoMargin
           src={toggleState ? privado : ojo}
           alt="Privacidad de saldo"
         />
