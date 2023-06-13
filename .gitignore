@@ -1,1 +1,17 @@
-node_modules
+# Directorio .yarn/
+.yarn/
+
+# Archivo .yarnrc.yml
+.yarnrc.yml
+
+# Directorio node_modules/
+node_modules/
+
+# Archivo .env (si se usa para almacenar variables de entorno local)
+.env
+
+# Archivo .env.* (si se usan múltiples archivos .env para diferentes entornos)
+.env.*
+
+# Archivo yarn.lock (para evitar conflictos en las dependencias)
+yarn.lock
